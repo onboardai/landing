@@ -30,7 +30,6 @@ import {
   Zap,
 } from "lucide-react";
 import { Poppins } from "next/font/google";
-import logo from "./logo.png";
 import Image from "next/image";
 
 const poppins = Poppins({
