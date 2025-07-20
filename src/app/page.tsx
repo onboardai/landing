@@ -3,12 +3,10 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import {
   ArrowRight,
   Menu,
   X,
-  Star,
   ChevronRight,
   Sparkles,
   Rocket,
@@ -26,7 +24,6 @@ import {
   Telescope,
   Volume2,
   Layers,
-  Check,
   Zap,
   ChartNoAxesCombined,
   Headset,
@@ -39,14 +36,9 @@ import {
   FileText
 } from "lucide-react";
 
-import { Poppins, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: "400",
-});
 
 const inter = Inter({
   subsets: ["latin"],
