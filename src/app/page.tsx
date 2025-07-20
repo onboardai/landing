@@ -24,11 +24,6 @@ import {
   Volume2,
   Layers,
   Zap,
-  ChartNoAxesCombined,
-  Headset,
-  Wrench,
-  ShieldBan,
-  Mail,
   Users,
   Search,
   CheckCircle,
@@ -114,49 +109,6 @@ const Page = () => {
       bullet3: "Task Scheduler",
     },
   ];
-
-  const employee = [
-    {
-      name: "Sales",
-      icon: ChartNoAxesCombined,
-      bullet1: "SDR AI Rep",
-      bullet2: "Lead Nurturer",
-      bullet3: "CRM Updater",
-      color: "from-orange-500 to-red-500 "
-    },
-    {
-      name: "Customer Support",
-      icon: Headset,
-      bullet1: "Ticket Handler",
-      bullet2: "Live Chat AI",
-      bullet3: "Email Responder",
-      color: "from-purple-500 to-pink-500",
-    },
-    {
-      name: "Operations",
-      icon: Wrench,
-      bullet1: "Data Entry Assistant",
-      bullet2: "Internal Coordinator",
-      bullet3: "Task Scheduler",
-      color: "from-indigo-500 to-purple-500",
-    },
-    {
-      name: "HR & Admin",
-      icon: ShieldBan,
-      bullet1: "Recruitment Screener",
-      bullet2: "Interview Setter",
-      bullet3: "Virtual Office Manager",
-      color: "from-cyan-500 to-blue-500",
-    },
-    {
-      name: "Marketing",
-      icon: Mail,
-      bullet1: "Outreach AI",
-      bullet2: "Campaign Assistant",
-      bullet3: "Research Analyst",
-      color: "from-pink-500 to-rose-500",
-    }
-  ]
 
   const agentCategories = [
     {
