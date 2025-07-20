@@ -60,8 +60,8 @@ const Page = () => {
       agents: "8 agents",
       color: "from-purple-500 to-pink-500",
       bullet1: "Social Media Manager",
-      bullet2: "Market Research Analyst",
-      bullet3: "Ad Campaigns Coordinator",
+      bullet2: "Market Researcher",
+      bullet3: "Ad Coordinator",
     },
     {
       icon: TrendingUp,
@@ -79,16 +79,16 @@ const Page = () => {
       color: "from-red-500 to-rose-500",
       bullet1: "Recruitment Screener",
       bullet2: "Interview Setter",
-      bullet3: "Virtual Office Manager",
+      bullet3: "HR Assistant",
     },
     {
       icon: Lightbulb,
       name: "Research",
       agents: "7 agents",
       color: "from-yellow-500 to-orange-500",
-      bullet1: "Trend Analyzer",
-      bullet2: "Insight Summarizer",
-      bullet3: "Data Scout",
+      bullet1: "Trend Analyst",
+      bullet2: "Market Analyst",
+      bullet3: "Data Researcher",
     },
     {
       icon: Shield,
@@ -112,7 +112,7 @@ const Page = () => {
 
   const agentCategories = [
     {
-      name: "Legal Assistant",
+      name: "Legal Assistance",
       icon: ShieldUser,
       description: "AI-powered legal document review and assistance",
       agents: "15+ agents",
@@ -140,30 +140,30 @@ const Page = () => {
       color: "from-orange-500 to-red-500",
     },
     {
-      name: "Administrative Assistant",
+      name: "Administrative Support",
       icon: Brain,
       description: "Automated admin support for calendars, reminders, and docs",
       agents: "22+ agents",
       color: "from-indigo-500 to-purple-500",
     },
     {
-      name: "Marketing Research",
+      name: "Market Research",
       icon: Telescope,
       description: "Market analysis and competitor intelligence",
       agents: "10+ agents",
       color: "from-green-500 to-emerald-500",
     },
     {
-      name: "Voice Assistant",
+      name: "Voice Interaction",
       icon: Volume2,
-      description: "Voice-activated AI for calls and meetings",
+      description: "Voice-activated AI for sales, meetings, and support",
       agents: "6+ agents",
       color: "from-pink-500 to-rose-500",
     },
     {
       name: "More Solutions",
       icon: Layers,
-      description: "Explore additional AI automation tools",
+      description: "Explore additional AI automated workflows",
       agents: "50+ agents",
       color: "from-cyan-500 to-blue-500",
     },
@@ -171,40 +171,40 @@ const Page = () => {
 
   const faqItems = [
     {
-      question: "What is OnboardAI?",
+      question: "What is Onboard AI?",
       answer:
-        "OnboardAI is the AI workforce platform that helps businesses hire, manage, and scale with AI employees.",
+        "Onboard AI is the AI workforce platform that helps businesses hire, manage, and scale with AI employees.",
     },
     {
       question:
         "What are AI employees?",
       answer:
-        "AI employees are advanced AI systems built to autonomously execute job functions like sales outreach, support, operations, and more  -just like a human teammate.",
+        "AI Employees are AI Agents that take actions through a series of thinking and self learning process, using different tools to achieve the targeted outcome. We call them AI Employees because they act like teammates freeing up human employees to handle creative and strategic works.",
     },
     {
-      question: "Who provides the AI employees on OnboardAI?",
+      question: "Who provides the AI employees on Onboard AI?",
       answer:
-        "Our partnered AI developers and agencies list their most capable agents on OnboardAI, offering businesses a vetted, job-ready AI workforce.",
+        "Our partnered AI developers and providers list their most capable agents by department — offering businesses access to a curated, job-ready AI workforce.",
     },
     {
-      question: "Can I manage my AI employees through OnboardAI?",
+      question: "Can I manage my AI employees through Onboard AI?",
       answer:
         "Very soon. We’re actively building an AI HRM platform to help you track performance, outcomes, and manage your AI workforce in one place.",
     },
     {
       question: "Do you provide ongoing support?",
       answer:
-        "Yes, we offer  support through email and chat to help you get started and address any issues you encounter.",
+        "Absolutely. We’re here for you 24/7 - with real-time chat, email support, and in-depth documentation. Whether you’re starting out or scaling, we’re right beside you.",
     },
     {
       question: "What kind of ROI can I expect from AI automation?",
       answer:
-        "Our customers see 3–5× ROI in the first few months, with 60% fewer manual tasks, 40% faster responses, and a 25% boost in customer satisfaction.",
+        "Most businesses using AI Employees report 2–4× ROI in the first few months, with faster work completion, reduced costs, and improved customer experience. While results vary, the gains from well-implemented AI are both measurable and game-changing.",
     },
     {
       question: "How quickly can I deploy AI employees in my organization?",
       answer:
-        "Deployment usually takes less than 48 hours, depending on your tech stack and the AI employee selected.",
+        "In most cases, AI Employees can be deployed within 24–48 hours. Timelines depend on the tech stack used and the selected AI provider. We still ensure the smoothest possible onboarding in every step of the way.",
     },
   ];
 
@@ -213,7 +213,7 @@ const Page = () => {
       number: "01",
       title: "Providers list AI employees",
       description:
-        "AI developers and agencies showcase their job-ready AI employees, organized by department and role.",
+        "AI developers and providers showcase their job-ready AI employees, organized by department and role.",
       icon: Users,
       color: "bg-blue-500",
     },
@@ -235,8 +235,8 @@ const Page = () => {
     },
     {
       number: "04",
-      title: "Contract through OnboardAI",
-      description: "OnboardAI facilitates a smooth hiring agreement and manages the handoff and tracking from day one.",
+      title: "Contract through Onboard AI",
+      description: "Onboard AI facilitates a smooth hiring agreement and manages the handoff and tracking from day one.",
       icon: FileText,
       color: "bg-orange-500",
     },
@@ -516,7 +516,7 @@ const Page = () => {
               </span>
             </h2>
             <p className="text-2xl text-gray-600 max-w-3xl mx-auto font-normal">
-              Transform how every team in your organization operates with your next AI hire.
+              Transform how your team works by automating all critical workflows across your organization.
             </p>
           </div>
 
@@ -622,7 +622,7 @@ const Page = () => {
               <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">Work</span>
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-              We enable seamless AI hiring between businesses and AI employee providers.
+              We enable seamless AI hiring for businesses with AI employee providers.
             </p>
           </div>
 
@@ -825,7 +825,7 @@ const Page = () => {
 
                   {/* Copy */}
                   <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-600 mb-8 sm:mb-12 leading-relaxed max-w-4xl mx-auto font-light px-2 sm:px-0">
-                    OnboardAI makes it effortless for businesses to build an AI-augmented workforce by delegating real
+                    Onboard AI makes it effortless for businesses to build an AI-augmented workforce by delegating real
                     jobs to AI employees.
                   </p>
 
@@ -912,7 +912,7 @@ const Page = () => {
           {/* Navigation Links */}
           <div className="flex flex-col items-center gap-6 mb-16 text-center">
             <div className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-              OnboardAI
+              Onboard AI
             </div>
             <ul className="flex flex-wrap justify-center gap-6 text-gray-300 text-base font-normal">
               <li>
@@ -934,7 +934,7 @@ const Page = () => {
           <div className="border-t border-gray-700/50 pt-12">
             <div className="flex flex-col items-center text-center gap-4">
               <div className="text-gray-400 text-sm font-normal">
-                © 2025 OnboardAI. The Future Workforce, Today.
+                © 2025 Onboard AI. The Future Workforce, Today.
               </div>
             </div>
           </div>
