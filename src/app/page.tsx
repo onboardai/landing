@@ -16,7 +16,6 @@ import {
   Lightbulb,
   Shield,
   Workflow,
-  Smile,
   Palette,
   Target,
   Activity,
@@ -33,7 +32,8 @@ import {
   Users,
   Search,
   CheckCircle,
-  FileText
+  FileText,
+  ShieldUser
 } from "lucide-react";
 
 import { Inter } from "next/font/google";
@@ -55,42 +55,63 @@ const Page = () => {
       name: "Sales",
       agents: "12 agents",
       color: "from-blue-500 to-cyan-500",
+      bullet1: "SDR AI Rep",
+      bullet2: "Lead Nurturer",
+      bullet3: "CRM Updater",
     },
     {
       icon: Megaphone,
       name: "Marketing",
       agents: "8 agents",
       color: "from-purple-500 to-pink-500",
+      bullet1: "Outreach AI",
+      bullet2: "Campaign Assistant",
+      bullet3: "Research Analyst",
     },
     {
       icon: TrendingUp,
       name: "Finance",
       agents: "6 agents",
       color: "from-green-500 to-emerald-500",
+      bullet1: "Expense Auditor",
+      bullet2: "Invoice Reconciliator",
+      bullet3: "Budget Optimizer",
     },
     {
       icon: Heart,
       name: "Human Resources",
       agents: "4 agents",
       color: "from-red-500 to-rose-500",
+      bullet1: "Recruitment Screener",
+      bullet2: "Interview Setter",
+      bullet3: "Virtual Office Manager",
     },
     {
       icon: Lightbulb,
       name: "Research",
       agents: "7 agents",
       color: "from-yellow-500 to-orange-500",
+      bullet1: "Trend Analyzer",
+      bullet2: "Insight Summarizer",
+      bullet3: "Data Scout",
     },
     {
       icon: Shield,
       name: "Customer Support",
       agents: "10 agents",
       color: "from-teal-500 to-cyan-500",
+      bullet1: "Ticket Handler",
+      bullet2: "Live Chat AI",
+      bullet3: "Email Responder",
     },
     {
       icon: Workflow,
       name: "Operations",
       agents: "5 agents",
       color: "from-indigo-500 to-purple-500",
+      bullet1: "Data Entry Assistant",
+      bullet2: "Internal Coordinator",
+      bullet3: "Task Scheduler",
     },
   ];
 
@@ -139,9 +160,9 @@ const Page = () => {
 
   const agentCategories = [
     {
-      name: "Customer Support",
-      icon: Smile,
-      description: "AI-powered customer service automation",
+      name: "Legal Assistant",
+      icon: ShieldUser,
+      description: "AI-powered legal document review and assistance",
       agents: "15+ agents",
       color: "from-emerald-500 to-teal-500",
     },
@@ -167,9 +188,9 @@ const Page = () => {
       color: "from-orange-500 to-red-500",
     },
     {
-      name: "AI Chatbot",
+      name: "Administrative Assistant",
       icon: Brain,
-      description: "Conversational AI for websites and apps",
+      description: "Automated admin support for calendars, reminders, and docs",
       agents: "22+ agents",
       color: "from-indigo-500 to-purple-500",
     },
@@ -219,14 +240,14 @@ const Page = () => {
         "Very soon. We’re actively building an AI HRM platform to help you track performance, outcomes, and manage your AI workforce in one place.",
     },
     {
-      question: "Do you provide training and ongoing support?",
+      question: "Do you provide ongoing support?",
       answer:
-        "Yes, we provide comprehensive training. Ongoing support includes 24/7 technical assistance, regular check-ins with your success manager, quarterly business reviews, and access to our knowledge base and community forums.",
+        "Yes, we offer  support through email and chat to help you get started and address any issues you encounter.",
     },
     {
       question: "What kind of ROI can I expect from AI automation?",
       answer:
-        "Our customers see 3–5× ROI in the first year, with 60% fewer manual tasks, 40% faster responses, and a 25% boost in customer satisfaction.",
+        "Our customers see 3–5× ROI in the first few months, with 60% fewer manual tasks, 40% faster responses, and a 25% boost in customer satisfaction.",
     },
     {
       question: "How quickly can I deploy AI employees in my organization?",
@@ -491,7 +512,9 @@ const Page = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
                     {dept.name}
                   </h3>
-                  <p className="text-gray-600 font-medium">{dept.agents}</p>
+                  <p className="text-gray-600 font-medium">• {dept.bullet1}</p>
+                  <p className="text-gray-600 font-medium">• {dept.bullet2}</p>
+                  <p className="text-gray-600 font-medium">• {dept.bullet3}</p>
                 </CardContent>
               </Card>
             ))}
@@ -512,7 +535,10 @@ const Page = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
                     {dept.name}
                   </h3>
-                  <p className="text-gray-600 font-medium">{dept.agents}</p>
+                  <p className="text-gray-600 font-medium">• {dept.bullet1}</p>
+                  <p className="text-gray-600 font-medium">• {dept.bullet2}</p>
+                  <p className="text-gray-600 font-medium">• {dept.bullet3}</p>
+
                 </CardContent>
               </Card>
             ))}
@@ -579,7 +605,7 @@ const Page = () => {
       </section>
 
       {/* Employees Section */}
-      <section className="py-32 px-6 lg:px-8">
+      {/* <section className="py-32 px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
 
@@ -632,7 +658,7 @@ const Page = () => {
           </div>
 
         </div>
-      </section>
+      </section> */}
 
       {/* How We Work */}
       <section className="py-16 lg:py-24 bg-gray-50">
@@ -653,11 +679,11 @@ const Page = () => {
             <div className="flex items-center justify-center mb-8">
               <div className="flex items-center justify-center space-x-4 sm:space-x-8">
                 <div className="text-center">
-                  <div className="w-24 h-24 sm:w-32 sm:h-32 bg-blue-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                    <Users className="w-12 h-12 sm:w-16 sm:h-16 text-blue-600" />
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 bg-purple-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                    <Search className="w-12 h-12 sm:w-16 sm:h-16 text-purple-600" />
                   </div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900">AI Providers</h3>
-                  <p className="text-sm text-gray-600">Showcase AI employees</p>
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900">Businesses</h3>
+                  <p className="text-sm text-gray-600">Find AI talent</p>
                 </div>
 
                 <div className="flex items-center justify-center px-4">
@@ -671,11 +697,11 @@ const Page = () => {
                 </div>
 
                 <div className="text-center">
-                  <div className="w-24 h-24 sm:w-32 sm:h-32 bg-purple-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                    <Search className="w-12 h-12 sm:w-16 sm:h-16 text-purple-600" />
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 bg-blue-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                    <Users className="w-12 h-12 sm:w-16 sm:h-16 text-blue-600" />
                   </div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900">Businesses</h3>
-                  <p className="text-sm text-gray-600">Find AI talent</p>
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900">AI Providers</h3>
+                  <p className="text-sm text-gray-600">Showcase AI employees</p>
                 </div>
               </div>
             </div>
@@ -947,7 +973,7 @@ const Page = () => {
                 <a href="https://tally.so/r/wL4OZp" className="hover:text-blue-400 transition-colors">Join Waitlist</a>
               </li>
               <li>
-                <a href="https://tally.so/r/wL4OZp" className="hover:text-blue-400 transition-colors">Contact Us</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=team@theonboardai.com" className="hover:text-blue-400 transition-colors">Contact Us</a>
               </li>
             </ul>
           </div>
