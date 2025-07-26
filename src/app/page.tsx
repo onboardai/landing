@@ -379,7 +379,7 @@ const Page = () => {
           </h1>
 
           <p className="text-2xl md:text-3xl text-gray-600 mb-16 max-w-4xl mx-auto leading-relaxed font-normal">
-            The world’s first AI employee hiring platform. Deploy intelligent AI employees across your organization.
+            The world’s first AI workforce platform. Deploy intelligent AI employees across your organization.
           </p>
 
           <div className="flex justify-center mb-16">
