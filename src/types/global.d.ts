@@ -1,8 +1,8 @@
-// types/global.d.ts
+// src/types/global.d.ts
 export {};
 
 declare global {
   interface Window {
-    gtag: (...args: any[]) => void;
+    gtag: (...args: unknown[]) => void;
   }
 }
